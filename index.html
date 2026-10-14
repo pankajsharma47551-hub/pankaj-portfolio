@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pankaj Sharma | Modern Developer</title>
+<style>
+:root{--bg:#070b14;--panel:#101827;--text:#f5f8ff;--muted:#a8b5ca;--blue:#55a5ff;--cyan:#6be7f5;--line:#243248}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at 80% 0%,#12264b 0,transparent 32%),var(--bg);color:var(--text);line-height:1.65}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1080px,90%);margin:auto}
+header{position:sticky;top:0;background:#070b14eF;border-bottom:1px solid var(--line);z-index:5}
+nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-weight:900;letter-spacing:1px}.logo span,.blue{color:var(--blue)}
+.links{display:flex;gap:22px;color:var(--muted);font-size:.93rem}.links a:hover{color:var(--cyan)}
+.hero{min-height:78vh;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:35px;padding:65px 0}
+.pill{display:inline-block;border:1px solid #31577c;background:#10213a;color:var(--cyan);padding:6px 13px;border-radius:30px;font-size:.85rem;margin-bottom:20px}
+h1{font-size:clamp(2.8rem,6vw,4.7rem);line-height:1.08;letter-spacing:-2px;margin-bottom:20px}
+.gradient{background:linear-gradient(90deg,var(--blue),var(--cyan));color:transparent;background-clip:text}
+.hero p,.intro,.card p,.goal p{color:var(--muted)}
+.hero p{max-width:600px;font-size:1.08rem;margin-bottom:25px}
+.btn{display:inline-block;padding:11px 17px;border-radius:9px;font-weight:bold;margin:4px 8px 4px 0;border:1px solid #34435a}
+.primary{background:linear-gradient(90deg,var(--blue),var(--cyan));color:#06101d;border:0}
+.art{display:grid;place-items:center;min-height:300px}
+.orb{width:min(300px,75vw);aspect-ratio:1;border:1px solid #3477ad;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,#183b67,#0a1222 68%);box-shadow:0 0 70px #2264aa30}
+.code{width:82%;padding:22px;border:1px solid #31577c;background:#0a111e;border-radius:14px;transform:rotate(-4deg);font-family:Consolas,monospace;font-size:.86rem;line-height:2;color:#d5e3f7}
+.cyan{color:var(--cyan)}.green{color:#9ce6aa}
+section{padding:68px 0}
+.kicker{font-size:.78rem;letter-spacing:2px;color:var(--cyan);font-weight:bold;text-transform:uppercase}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);margin:6px 0 12px}
+.intro{max-width:720px;margin-bottom:27px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.card{padding:23px;border:1px solid var(--line);border-radius:15px;background:linear-gradient(145deg,#111b2c,#0a111e);transition:.2s}
+.card:hover{transform:translateY(-4px);border-color:#4d8fc8}
+.icon{font-size:1.5rem;margin-bottom:10px}.card h3{margin-bottom:7px}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.tag{padding:7px 12px;border:1px solid var(--line);border-radius:8px;color:#d8e5f7;background:#0c1421;font-size:.9rem}
+.project-label{color:var(--cyan);font-size:.78rem;letter-spacing:1px}
+.goal{border:1px solid #2a5275;border-radius:16px;padding:28px;background:linear-gradient(110deg,#10213a,#0b1320)}
+.goal p{max-width:760px;margin-top:8px}
+.contact{text-align:center;max-width:720px;margin:auto;padding:34px 22px;border:1px solid var(--line);border-radius:16px;background:#0c1421}
+footer{text-align:center;padding:24px;color:#8393aa;border-top:1px solid var(--line);font-size:.85rem}
+
+.section-image{
+  width:100%;
+  max-width:900px;
+  display:block;
+  margin:30px auto 0;
+  border:1px solid var(--line);
+  border-radius:18px;
+  box-shadow:0 18px 50px #00000045;
+}
+.section-image.about-image{max-width:760px}
+.section-image.goal-image{max-width:900px}
+.section-image.skills-image{max-width:900px}
+
+@media(max-width:760px){.hero{grid-template-columns:1fr;text-align:center;padding-top:48px}.hero p{margin-left:auto;margin-right:auto}.grid{grid-template-columns:1fr}.links{gap:12px;font-size:.82rem}.art{min-height:260px}}
+@media(max-width:430px){nav{flex-direction:column;padding:13px 0}.links{width:100%;justify-content:space-between}h1{letter-spacing:-1px}}
+</style>
+</head>
+<body>
+<header><nav class="wrap"><a class="logo" href="#home">PANKAJ<span>.DEV</span></a><div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#goal">Goal</a></div></nav></header>
+<main>
+<section class="hero wrap" id="home">
+<div>
+<div class="pill">● BCA STUDENT · FUTURE DEVELOPER</div>
+<h1>Hi, I'm<br><span class="gradient">Pankaj Sharma.</span></h1>
+<p>I’m a BCA student learning Python, web development, and Generative AI. I enjoy learning step by step, building practical projects, and turning ideas into digital experiences.</p>
+<a class="btn primary" href="#projects">Explore My Work ↗</a><a class="btn" href="#contact">Connect With Me</a>
+</div>
+<div class="art"><div class="orb"><div class="code">
+<div><span class="blue">class</span> <span class="cyan">Pankaj</span>:</div>
+<div>&nbsp;&nbsp;goal = <span class="green">"Keep learning"</span></div>
+<div>&nbsp;&nbsp;interests = [</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"Python"</span>,</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"Web Development"</span>,</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"Generative AI"</span>]</div>
+<div>&nbsp;&nbsp;<span class="blue">def</span> <span class="cyan">build</span>():</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">return</span> <span class="green">"🚀"</span></div>
+</div></div></div>
+</section>
+<section id="about"><div class="wrap">
+<div class="kicker">01 / Who I Am</div><h2>Curious mind. Builder mindset.</h2>
+<p class="intro">My name is Pankaj Sharma. I am 20 years old and a second-year Bachelor of Computer Applications (BCA) student. I’m interested in technology and enjoy improving my knowledge through practice and small projects.</p>
+<div class="grid">
+<article class="card"><div class="icon">🎓</div><h3>My Education</h3><p>BCA student building a foundation in programming, computer science, and software development.</p></article>
+<article class="card"><div class="icon">🧠</div><h3>My Strengths</h3><p>Curiosity, patience, consistency, willingness to learn, and solving problems one step at a time.</p></article>
+<article class="card"><div class="icon">⚡</div><h3>My Interests</h3><p>Programming, modern websites, AI tools, and discovering how technology can solve real problems.</p></article>
+</div><img class="section-image about-image" src="assets/who-i-am.png" alt="Pankaj Sharma - Who I Am"></div></section>
+<section id="skills"><div class="wrap"><div class="kicker">02 / My Skills</div><h2>Learning today. Building tomorrow.</h2><p class="intro">These are the areas I’m learning and exploring. I’m focused on strengthening the basics through hands-on practice.</p>
+<div class="tags"><span class="tag">Python — Beginner</span><span class="tag">HTML — Learning</span><span class="tag">CSS — Learning</span><span class="tag">JavaScript — Exploring</span><span class="tag">Generative AI</span><span class="tag">Vibe Coding</span><span class="tag">Problem Solving</span></div>
+</div><img class="section-image skills-image" src="assets/skills.png" alt="Pankaj Sharma - My Skills"></div></section>
+<section id="projects"><div class="wrap"><div class="kicker">03 / My Projects</div><h2>Small steps, real progress.</h2><p class="intro">A few project ideas and practice areas that represent my learning journey.</p>
+<div class="grid">
+<article class="card"><div class="project-label">PYTHON · PRACTICE</div><h3>Python Basics</h3><p>Practice programs using variables, input, operators, if/else conditions, and loops.</p></article>
+<article class="card"><div class="project-label">WEB · VIBE CODING</div><h3>Personal Portfolio</h3><p>This modern developer portfolio introduces my interests, skills, and future goals.</p></article>
+<article class="card"><div class="project-label">AI · EXPLORATION</div><h3>Generative AI</h3><p>Exploring how AI can help brainstorm ideas, create content, and support website development.</p></article>
+</div></div></section>
+<section id="goal"><div class="wrap"><div class="kicker">04 / My Future Goal</div><div class="goal"><h2>Build useful things with technology.</h2><p>My goal is to become a skilled software developer and learn more about Artificial Intelligence and Generative AI. I want to create useful projects, develop strong technical fundamentals, and use AI tools thoughtfully while understanding how the code works.</p></div><img class="section-image goal-image" src="assets/future-goal.png" alt="Pankaj Sharma - My Future Goal"></div></section>
+<section id="contact"><div class="wrap"><div class="contact"><div class="kicker">Let's Connect</div><h2>Every expert starts as a learner.</h2><p class="intro" style="margin:10px auto 20px">Thanks for visiting my portfolio. I’m on a journey of learning, building, and improving every day.</p><a class="btn primary" href="mailto:">Add Your Email Here</a><p style="color:#8393aa;font-size:.82rem;margin-top:12px">Replace this button with your real email or social profile when you're ready.</p></div></div></section>
+</main>
+<footer>© 2026 Pankaj Sharma · Designed with a modern developer vibe.</footer>
+</body>
+</html>
